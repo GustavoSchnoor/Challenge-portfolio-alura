@@ -5,8 +5,8 @@ coloque nas sessões indicadas*/
 :root{
     /*Insira a variavel das outras cores inspecionando o modelo do figma*/
     /*Se esforce para trabalhar com variáveis, é uma dica profissional valiosa*/
-   --cor-de-fundo: #F5F5F5;
-   --cor-de-link: #000;
+    --cor-de-fundo: #F5F5F5;
+    --cor-de-link: #000;
 }
 
 body {
@@ -25,65 +25,97 @@ a{
     color: var(--cor-de-link);
 }
 
-/*Neste desafio, gostariamos que praticassem a metodologia BEM, caso seintam a vontade 
-de utiliza-la. 
-
-Mas o que é o BEM?
-
-BEM (Block, Element, Modifier) ​​é uma abordagem baseada em componentes para o desenvolvimento
-web. A ideia por trás disso é dividir a interface do usuário em blocos independentes.
-Isso torna o desenvolvimento de interface fácil e rápido, mesmo com uma interface
-de usuário complexa, e permite a reutilização de código existente sem copiar e colar.
-
-Link da documentação oficial!
-https://en.bem.info/methodology/quick-start/*/
+.all {
+    width: 90vw;
+    margin-left: 5vw;
+    margin-right: 5vw;
+}
 
 /*Sessão Menu*/
 
-section.menu{
+.menu {
+    display: flex;
+    height: 88px;
+    align-items: center;
+    justify-content: space-between;
+}
 
+header {
+    display: flex;
+    gap: 10px;
+}
+
+header > img {
+    width: 1.5em;
+    height: 1.5em;
+}
+
+.menu__title {
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+.menu__title:hover, .menu__list__item:hover, header > img:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+
+nav {
+    display: flex;
+}
+
+.menu__list {
+    display: flex;
+    gap: 50px;
+    font-size: 1.3em;
+    padding-left: 0px;
 }
 
 /*Sessão Title*/
 
-section.title{
+.title{
+    display: flex;
+}
 
+.title__div {
+    display: flex;
+    flex-direction: row-reverse;
 }
 
 /*Sessão About*/
 
-section.about{
+.about{
 
 }
 
 /*Sessão Hobbies*/
 
-section.hobbies{
+.hobbies{
     
 }
 
 /* Experiência Acadêmica*/
 
-section.academic{
+.academic{
 
 }
 
 /* experiência*/
 
-section.experience{
+.experience{
 
 }
 
 /*Contato*/
 
-section.formcontato{
+.formcontato{
 
 }
 
 /*footeer*/
 
-section.footer{
-   
+.footer{
+
 }
 
 /* Chegou a hora de se desafiar com a responsividade, 
