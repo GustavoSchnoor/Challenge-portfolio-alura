@@ -5,7 +5,8 @@ coloque nas sessões indicadas*/
 :root{
     /*Insira a variavel das outras cores inspecionando o modelo do figma*/
     /*Se esforce para trabalhar com variáveis, é uma dica profissional valiosa*/
-    --cor-de-fundo: #F5F5F5;
+    --cor-de-fundo: #F0f0f0;
+    --cor-do-fundo2: rgba(0, 0, 0, 0.068);
     --cor-de-link: #000;
 }
 
@@ -19,6 +20,7 @@ body {
 }
 ol, ul,li {
     list-style: none;
+    padding-inline-start: 0px;
 }
 a{
     text-decoration: none;
@@ -26,9 +28,9 @@ a{
 }
 
 .all {
-    width: 90vw;
-    margin-left: 5vw;
-    margin-right: 5vw;
+    max-width: 1280px;
+    margin: auto;
+    padding: 0px 20px;
 }
 
 /*Sessão Menu*/
@@ -38,6 +40,9 @@ a{
     height: 88px;
     align-items: center;
     justify-content: space-between;
+    background-color: var(--cor-do-fundo2);
+    border-radius: 10px;
+    padding: 0px 20px;
 }
 
 header {
@@ -46,8 +51,8 @@ header {
 }
 
 header > img {
-    width: 1.5em;
-    height: 1.5em;
+    width: 1.4em;
+    height: 1.4em;
 }
 
 .menu__title {
@@ -60,38 +65,142 @@ header > img {
     transition: transform 0.3s ease;
 }
 
-nav {
-    display: flex;
-}
+/* nav {
+
+} */
 
 .menu__list {
     display: flex;
-    gap: 50px;
+    gap: 20px;
     font-size: 1.3em;
-    padding-left: 0px;
 }
 
 /*Sessão Title*/
 
 .title{
     display: flex;
+    justify-content: space-between;
 }
 
 .title__div {
     display: flex;
-    flex-direction: row-reverse;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.title__container {
+    width: 46em;
+}
+
+.title__bio {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.title__subsection {
+    font-size: 1.5em;
+    font-weight: normal;
+}
+
+.title__network {
+    font-size: 1.2em;
+    display: flex;
+    gap: 15px;
+}
+
+.title__network__item {
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 10px 20px;
+}
+
+.title__network__item:hover {
+    background-color: #4646466b;
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+
+.title__network__item > a > img {
+    width: 0.6em;
+    height: 0.6em;
 }
 
 /*Sessão About*/
 
 .about{
+    background-color: var(--cor-do-fundo2);
+    border-radius: 10px;
+    display: flex;
+    padding-left: 40px;
+}
 
+.about__container {
+    width: 50em;
+}
+
+.about__title {
+    font-size: 2em;
+}
+
+.about__paragraph {
+    text-indent: 10px;
+    font-size: 1.2em;
+}
+
+/* Sessão Skills */
+/* .skills {
+    Não sei se vai algo aqui
+} */
+
+.skills__title {
+    font-size: 2em;
+    text-align: center;
+}
+
+.skills__line {
+    display: flex;
+    justify-content: space-around;
+}
+
+.skills__img > img {
+    width: 200px;
+}
+
+.skills__name {
+    text-align: center;
+    font-weight: bold;
+    padding-top: 5px;
+    font-size: 1.2em;
 }
 
 /*Sessão Hobbies*/
 
-.hobbies{
-    
+/* .hobbies{
+    Não sei se vai algo aqui
+} */
+
+.hobbies__title {
+    font-size: 2em;
+    text-align: center;
+}
+
+.hobbies__line {
+    display: flex;
+    justify-content: space-around;
+}
+
+.hobbies__img > img {
+    width: 300px;
+    height: 200px;
+}
+
+.hobbies__name {
+    text-align: center;
+    font-weight: bold;
+    padding-top: 5px;
+    font-size: 1.2em;
 }
 
 /* Experiência Acadêmica*/
@@ -121,8 +230,8 @@ nav {
 /* Chegou a hora de se desafiar com a responsividade, 
 utilize como referência os breakpoints @media abaixo*/
 
-/*Tablet*/
-@media (min-width: 768px) {
+/*Tablet e Notebook*/
+@media (min-width: 768px) and (max-width: 1200px) {
 
 /* Menu */
 
@@ -139,7 +248,7 @@ utilize como referência os breakpoints @media abaixo*/
 }
 
 /*Mobile*/
-@media (min-width: 425px) {
+@media (min-width: 425px) and (max-width: 767px) {
 
 /*Menu*/
 

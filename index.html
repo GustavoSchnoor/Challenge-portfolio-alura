@@ -40,18 +40,22 @@
 <!-- Sessão de Header/Title/Hero -->
     <section class="title">
         <div class="title__div">
-            <img class="title__profile" src="./assets/gustavo368.png">
             <div class="title__container" id="#sobremim">
                 <h2 class="title__bio">Hello! Meu nome é Gustavo Schnoor e sou um estudante em desenvolvimento Front-end</h2>
                 <h3 class="title__subsection">Eu estou cursando Analise e Desenvolvimento de Sistemas e atualmente participo do projeto Oracle ONE na Alura.</h3>
                 <ul class="title__network">
                     <!-- Ponha os links de suas redes sociais favoritas -->
-                    <li class="title__network__item"><a href="">Github <img src="assets\arrow.png"> </a></li>
-                    <li class="title__network__item"><a href="">Linkedin <img src="assets\arrow.png"></a></li>
-                    <li class="title__network__item"><a href="">Instagram <img src="assets\arrow.png"></a></li>
-                    <li class="title__network__item"><a href="">Curriculo <img src="assets\arrow.png"></a></li>
+                    <li class="title__network__item"><a href="https://github.com/GustavoSchnoor" target="_blank" >Github <img src="assets\arrow.png"> </a></li>
+                    <li class="title__network__item"><a href="https://www.linkedin.com/in/gustavo-schnoor/" target="_blank" >Linkedin <img src="assets\arrow.png"></a></li>
+                    <li class="title__network__item"><a href="https://www.instagram.com/gustavo_schnoor/" target="_blank" >Instagram <img src="assets\arrow.png"></a></li>
                 </ul>
             </div>
+
+            <picture class="title__profile">
+                <source media="(min-width: 768px) and (max-width: 1200px)" srcset="./assets/gustavo250.png" type="image/png">
+                <source media="(min-width: 425px) and (max-width: 767px)" srcset="./assets/gustavo146.png" type="image/png">
+                <img class="title__profile" src="./assets/gustavo368.png">
+            </picture>
         </div>
     </section>
 
@@ -59,10 +63,8 @@
     <section class="about">
         <div class="about__container">
             <h3 class="about__title">Sobre mim</h3>
-            <p class="about__paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque velit velit, volutpat semper dignissim dictum, imperdiet ut lacus. Quisque gravida ex a mattis pretium. Suspendisse potenti. Ut semper sagittis ligula et lacinia. </p>
-            <p class="about__paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque velit velit, volutpat semper dignissim dictum, imperdiet ut lacus. Quisque gravida ex a mattis pretium. Suspendisse potenti. Ut semper sagittis ligula et lacinia. Aenean sit amet felis venenatis, egestas metus vitae, aliquet metus.</p>
-            <!-- Caso queira colocar sua própria assinatura, insira aqui! -->
-            <img src="assets\signature.png">
+            <p class="about__paragraph">Olá, meu nome é Gustavo. Sou organizado, comunicativo, bom trabalho em equipe e apaixonado pela área gamer. Iniciei meus estudos na área de desenvolvimento web e vi que quanto mais eu descubro, mais fico fascinado em como é o mundo da tecnologia. Atualmente faço faculdade de Analise e Desenvolvimento de Sistemas, porem iniciei e ainda mantenho meus estudos como autodidata em HTML, CSS e JavaScript. Pretendo obter mais conhecimento para que possa me aprimorar em mais linguagens, metodologias ágeis e frameworks.</p>
+            <p class="about__paragraph">Minha experiência é de 8 anos na área de Customer Experience e SAC Social Media na empresa KaBuM! Sempre trabalhei em contato com clientes, seja virtualmente ou presencialmente. Amo conhecimento, e sempre que aprendo conteúdo novo, quero por em prática.</p>
         </div>
     </section>
 
@@ -72,43 +74,22 @@
             <div class="skills__line">
                 <div class="skills__box">
                     <ul>
-                        <li class="skills__img"><img src="assets\htlm.png"></li>
-                        <li class="skills__name"> Html 5</li>
+                        <li class="skills__img"><img src="./assets/html.png"></li>
+                        <li class="skills__name"> HTML5 </li>
                     </ul>
                 </div>
 
                 <div class="skills__box">
                     <ul>
-                        <li class="skills__img"> <img src="assets\js_icon.png" alt=""></li>
-                        <li class="skills__name">Javascript</li>
+                        <li class="skills__img"> <img src="./assets/css.png" alt=""></li>
+                        <li class="skills__name"> CSS3 </li>
                     </ul>
                 </div>
 
                 <div class="skills__box">
                     <ul>
-                        <li class="skills__img"> <img src="assets\php_icon.png" alt=""></li>
-                        <li class="skills__name">PHP</li>
-                    </ul>
-                </div>
-
-                <div class="skills__box">
-                    <ul>
-                        <li class="skills__img"><img src="assets\nodejs_icon.png" alt=""></li>
-                        <li class="skills__name">Node JS</li>
-                    </ul>
-                </div>
-
-                <div class="skills__box">
-                    <ul>
-                        <li class="skills__img"> <img src="assets\react_icon.png" alt=""> </li>
-                        <li class="skills__name">React</li>
-                    </ul>
-                </div>
-
-                <div class="skills__box">
-                    <ul>
-                        <li class="skills__img"> <img src="assets\css_icon.png" alt=""> </li>
-                        <li class="skills__name">CSS</li>
+                        <li class="skills__img"> <img src="./assets/javascript.png" alt=""></li>
+                        <li class="skills__name"> JAVASCRIPT </li>
                     </ul>
                 </div>
         </div>
@@ -120,43 +101,22 @@
             <div class="hobbies__line">
                 <div class="hobbies__box">
                     <ul>
-                        <li class="hobbies__img"><img src="assets\skate_icon.png"></li>
-                        <li class="hobbies__name"> Andar de skate</li>
+                        <li class="hobbies__img"><img src="./assets/gamer.png"></li>
+                        <li class="hobbies__name"> Gamer </li>
                     </ul>
                 </div>
 
                 <div class="hobbies__box">
                     <ul>
-                        <li class="hobbies__img"> <img src="assets\guitar_icon.png" alt=""></li>
-                        <li class="hobbies__name">Tocar baixo</li>
+                        <li class="hobbies__img"> <img src="./assets/mestre-rpg2.png" alt=""></li>
+                        <li class="hobbies__name">Mestre de RPG</li>
                     </ul>
                 </div>
 
                 <div class="hobbies__box">
                     <ul>
-                        <li class="hobbies__img"> <img src="assets\headphones_icon.png" alt=""></li>
-                        <li class="hobbies__name">Ouvir música</li>
-                    </ul>
-                </div>
-
-                <div class="hobbies__box">
-                    <ul>
-                        <li class="hobbies__img"><img src="assets\tv_icon.png" alt=""></li>
-                        <li class="hobbies__name">Assistir séries</li>
-                    </ul>
-                </div>
-
-                <div class="hobbies__box">
-                    <ul>
-                        <li class="hobbies__img"> <img src="assets\forkspoon_icon.png" alt=""> </li>
-                        <li class="hobbies__name">Cozinhar</li>
-                    </ul>
-                </div>
-
-                <div class="hobbies__box">
-                    <ul>
-                        <li class="hobbies__img"> <img src="assets\camera_icon.png" alt=""> </li>
-                        <li class="hobbies__name">Tirar fotos</li>
+                        <li class="hobbies__img"> <img src="./assets/basquete.png" alt=""></li>
+                        <li class="hobbies__name">Basquete</li>
                     </ul>
                 </div>
         </div>
