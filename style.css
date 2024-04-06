@@ -30,7 +30,7 @@ a{
 .all {
     display: flex;
     flex-direction: column;
-    gap: 40px;
+    gap: 80px;
     max-width: 1280px;
     margin: auto;
     padding: 0px 20px;
@@ -393,6 +393,10 @@ header > img {
     text-shadow: 2px 2px 2px rgba(14, 13, 13, 0.432);
 }
 
+.footer__rodape > p {
+    margin-bottom: 2px;
+}
+
 /* -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 
 /*Tablet e Notebook*/
@@ -405,7 +409,7 @@ header > img {
 }
 
 .menu__title {
-    font-size: 1.3em;
+    font-size: 1.5em;
 }
 
 header > img {
@@ -424,7 +428,7 @@ header > img {
 }
 
 .title__bio {
-    font-size: 1.3em;
+    font-size: 1.5em;
 }
 
 .title__subsection {
@@ -443,7 +447,7 @@ header > img {
 }
 
 .about__title {
-    font-size: 1.3em;
+    font-size: 1.5em;
 }
 
 .about__paragraph {
@@ -453,7 +457,7 @@ header > img {
 /*Skills*/
 
 .skills__title {
-    font-size: 1.3em;
+    font-size: 1.5em;
 }
 
 .skills__name {
@@ -467,7 +471,7 @@ header > img {
 /*Hobbies*/
 
 .hobbies__title {
-    font-size: 1.3em;
+    font-size: 1.5em;
 }
 
 .hobbies__name {
@@ -482,7 +486,7 @@ header > img {
 /*Experiências acadêmicas*/
 
 .academic__title {
-    font-size: 1.3em;
+    font-size: 1.5em;
 }
 
 .academic__courses__list {
@@ -496,8 +500,62 @@ header > img {
 
 /*Expeirência profissional*/
 
+.experience__section__title {
+    font-size: 1.5em;
 }
 
+.experience__title {
+    font-size: 1.3em;
+}
+
+.experience__text {
+    font-size: 1em;
+}
+
+.experience__img {
+    width: 400px;
+    height: 250px;
+}
+
+.experiencia__botao--demo, .experiencia__botao--repo {
+    font-size: 0.9em;
+}
+
+/* CONTATO */
+.formcontato__title  {
+    font-size: 1.5em;
+}
+
+.formcontato__subtext {
+    font-size: 0.9em;
+}
+
+.formcontato__input, .formcontato__textarea {
+    font-size: 0.8em;
+}
+
+.formcontato__botao {
+    font-size: 0.8em;
+    width: 200px;
+    
+}
+
+.formcontato__img {
+    width: 350px;
+
+}
+
+.formcontato__form {
+    align-items: flex-start;
+}
+
+/* RODAPE */
+
+.footer {
+    font-size: 1em;
+}
+
+}
 /* -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 /* Mobile */
 @media (min-width: 425px) and (max-width: 767px) {
