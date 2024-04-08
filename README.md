@@ -8,7 +8,7 @@ Olá, bem-vindo ao meu Challenge da Oracle e Alura, onde precisei fazer um portf
 - CSS
 - JavaScript
 
-- ## Desenvolvido por
+## Desenvolvido por
 
 ### Gustavo Schnoor
 
