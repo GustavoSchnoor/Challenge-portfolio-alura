@@ -6,7 +6,6 @@ let inputNome = document.querySelector('#nome');
 let inputEmail = document.querySelector('#email');
 let inputAssunto = document.querySelector('#assunto');
 let inputMensagem = document.querySelector('#mensagem');
-let inputBotao = document.querySelector('.formcontato__botao');
 
 
 validaBotao();
@@ -61,7 +60,7 @@ function validaNome() {
     if (valorNome.length > 50 ) {
         alert('O campo nome não pode ter mais de 50 caracteres');
         inputNome.classList.add('error');
-        inputNome.value = '';
+        
         return
     }
 
@@ -109,7 +108,7 @@ function validaAssunto() {
     if (valorAssunto.length > 50) {
         alert('O campo assunto não pode ter mais de 50 caracteres');
         inputAssunto.classList.add('error');
-        inputAssunto.value = '';
+        
         return
     }
 
@@ -130,7 +129,7 @@ function validaMensagem() {
     if (valorMensagem.length > 300) {
         alert('O campo de mensagem deve conter no máximo 300 caracteres');
         inputMensagem.classList.add('error');
-        inputMensagem.value = '';
+        
         return
     }
 
@@ -138,14 +137,26 @@ function validaMensagem() {
 }
 
 function mensagemEnviada() {
-    if (inputNome.value.trim() !== '' && inputEmail.value.trim() !== '' && inputAssunto.value.trim() !== '' && inputMensagem.value.trim() !== '') {
+    if (inputNome.classList.contains('error') || inputEmail.classList.contains('error') || inputAssunto.classList.contains('error') || inputMensagem.classList.contains('error')) {
+        alert('Por favor, revise todos os campos antes de enviar')
+    } else {
         alert('Mensagem enviada com sucesso!');
         inputNome.value = '';
         inputEmail.value = '';
         inputAssunto.value = '';
         inputMensagem.value = '';
-        return
     }
 }
+
+// function mensagemEnviada() {
+//     if (inputNome.value.trim() !== '' && inputEmail.value.trim() !== '' && inputAssunto.value.trim() !== '' && inputMensagem.value.trim() !== '') {
+//         alert('Mensagem enviada com sucesso!');
+//         inputNome.value = '';
+//         inputEmail.value = '';
+//         inputAssunto.value = '';
+//         inputMensagem.value = '';
+//         return
+//     }
+// }
 
 
