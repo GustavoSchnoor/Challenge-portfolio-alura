@@ -138,8 +138,10 @@ function validaMensagem() {
 
 function mensagemEnviada() {
     if (inputNome.classList.contains('error') || inputEmail.classList.contains('error') || inputAssunto.classList.contains('error') || inputMensagem.classList.contains('error')) {
+        // SE algum dos campos acima tiver a classe ('error') que é recebida só se algum campo estiver errado, conforme funções anteriores, retornará um alerta.
         alert('Por favor, revise todos os campos antes de enviar')
     } else {
+        // SE nenhum campo tiver com a classe ('error') o alerta sera enviado e os campos limpos.
         alert('Mensagem enviada com sucesso!');
         inputNome.value = '';
         inputEmail.value = '';
@@ -148,15 +150,5 @@ function mensagemEnviada() {
     }
 }
 
-// function mensagemEnviada() {
-//     if (inputNome.value.trim() !== '' && inputEmail.value.trim() !== '' && inputAssunto.value.trim() !== '' && inputMensagem.value.trim() !== '') {
-//         alert('Mensagem enviada com sucesso!');
-//         inputNome.value = '';
-//         inputEmail.value = '';
-//         inputAssunto.value = '';
-//         inputMensagem.value = '';
-//         return
-//     }
-// }
 
 
