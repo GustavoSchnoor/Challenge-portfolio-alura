@@ -321,6 +321,17 @@ header > img {
     justify-content: center;
 }
 
+.formcontato--esquerda {
+    display: flex;
+    align-items: center;
+}
+
+.formcontato__img {
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+}
+
 .formcontato__contacto {
     display: flex;
     justify-content: space-between;
@@ -368,6 +379,10 @@ header > img {
     border-color: #464646;
 }
 
+.formcontato__input.error {
+    border: 1px solid red;
+}
+
 .formcontato__botao {
     width: 300px;
     border: 2px solid black;
@@ -381,6 +396,10 @@ header > img {
     background-color: #4646466b;
     transform: scale(1.1);
     transition: transform 0.3s ease;
+}
+
+.formcontato__botao[disabled]:hover {
+    cursor: not-allowed;
 }
 
 /*footeer*/
