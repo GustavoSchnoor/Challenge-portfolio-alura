@@ -7,8 +7,8 @@ let inputEmail = document.querySelector('#email');
 let inputAssunto = document.querySelector('#assunto');
 let inputMensagem = document.querySelector('#mensagem');
 
-
 validaBotao();
+
 // ## FUNÇÃO PARA VALIDAR O BOTÃO. Se não tiver nada preenchido, receberá disabled, se for preenchido, o disabled é removido
 function validaBotao() {
     let campos = document.querySelectorAll('.formcontato__input, .formcontato__textarea');
@@ -38,7 +38,7 @@ function validaBotao() {
 
 // ## Adiciona uma lista de Evento ('submit') que chama a função (event) e faz o formulário funcionar chamando cada função dentro dele
 formGeral.addEventListener('submit', function(event) {
-    // Cancela o evento se for cancelável, sem parar a propagação do mesmo.
+    // Cancela o evento se for cancelável, sem parar a continuação do mesmo.
     event.preventDefault();
     validaNome();
     validaEmail();
@@ -60,7 +60,6 @@ function validaNome() {
     if (valorNome.length > 50 ) {
         alert('O campo nome não pode ter mais de 50 caracteres');
         inputNome.classList.add('error');
-        
         return
     }
 
@@ -108,7 +107,6 @@ function validaAssunto() {
     if (valorAssunto.length > 50) {
         alert('O campo assunto não pode ter mais de 50 caracteres');
         inputAssunto.classList.add('error');
-        
         return
     }
 
@@ -129,7 +127,6 @@ function validaMensagem() {
     if (valorMensagem.length > 300) {
         alert('O campo de mensagem deve conter no máximo 300 caracteres');
         inputMensagem.classList.add('error');
-        
         return
     }
 
